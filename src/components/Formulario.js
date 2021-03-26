@@ -8,7 +8,7 @@ export default function Formulario() {
 
 
     //conectar con el backend
-    const registrar=async(e)=>{
+  const registrar=async(e)=>{
       e.preventDefault()
       const NuevoEmpleado={nombre,apellido,salario}
       const respuesta=await Axios.post('http://localhost:4000/api',NuevoEmpleado) 
